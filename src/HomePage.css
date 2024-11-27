@@ -1,0 +1,115 @@
+/* Importing the Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Changed to Poppins font */
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+h1 {
+    font-family: 'Lobster', cursive; /* Example font for headings */
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-family: 'Roboto', sans-serif; /* Example font for paragraphs */
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Set font color to white */
+html, body {
+    height: 100%;
+    margin: 0;
+    color: white;  /* Set font color to white for text */
+}
+
+/* Home container */
+.home-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden; /* Ensure video doesn't overflow */
+}
+
+/* Background video */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Place the video behind the content */
+}
+
+/* Container for the main content */
+.container {
+    text-align: center;
+    
+    padding: 60px;
+    border-radius: 15px;
+    max-width: 700px;
+    width: 100%;
+}
+
+h1  {
+    font-size: 3.5rem;
+    font-family: "Sevillana", cursive;
+    font-weight: 400;
+    font-style:regular;
+    color: white !important; /* Changed title color to white */
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: pop-up 1s forwards;
+    animation-delay: 0.5s;
+}
+
+
+
+/* Pop-up animation */
+@keyframes pop-up {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+p {
+    font-size: 1.2rem;
+    color: white;  /* Set font color of paragraph to white */
+    margin-bottom: 40px;
+}
+
+/* Button styling with black background and white text */
+button {
+    background-color: black !important  ; /* Changed button background color to black */
+    color: rgb(254, 252, 252); /* Button text color remains white */
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #222; /* Slightly darker black for hover */
+    transform: scale(1.05);
+}

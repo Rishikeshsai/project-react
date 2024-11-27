@@ -1,0 +1,80 @@
+/* src/components/CreateAccount.css */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    background: url('4.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.login-box h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.input-group label {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #ddd;
+}
+
+.button-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #b38481;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.links {
+    margin-top: 1rem;
+}
+
+.links a {
+    color: #ddd;
+    text-decoration: none;
+}

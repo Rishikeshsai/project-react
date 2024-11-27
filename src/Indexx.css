@@ -1,0 +1,190 @@
+/* General Styles for HomePage */
+h1 {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(1, 8, 14);
+}
+
+/* General styling for the navigation bar */
+nav {
+  background-color: #03000c;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #44424a;
+  border: 1px solid #5D3FD3;
+}
+
+/* Styling for the active link */
+nav a.active {
+  background-color: #fff;
+  color: #5D3FD3;
+  font-weight: bold;
+  border: 1px solid #5D3FD3;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 10px 0;
+    width: 100%;
+  }
+}
+
+/* Slideshow and other sections styling */
+.section {
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.slideshow-container {
+  max-width: 50%;
+  height: auto;
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+.mySlides {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+img {
+  vertical-align: middle;
+  max-height: 400px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  font-size: 18px;
+  color: #FFF;
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+/* Instructions styling */
+.instructions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.instruction-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  width: 30%;
+  border-radius: 8px;
+}
+
+.instruction-box h2 {
+  font-size: 1.3rem;
+}
+
+.instruction-box h3 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+/* Upload section styling */
+.upload-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.upload-box, .preview-container {
+  width: 45%;
+}
+
+.upload-box input[type="file"] {
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #5D3FD3;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #6A4AC7;
+}
+
+/* Preview Image Styling */
+.preview-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* About Section */
+.zigzag-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.zigzag-box {
+  width: 45%;
+  margin: 10px;
+  text-align: center;
+}
+
+.zigzag-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.zigzag-box h3 {
+  font-size: 1rem;
+}
+
+/* Contact Section Styling */
+h3 i {
+  margin-right: 10px;
+}
